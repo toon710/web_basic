@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>셀 병합하기</title>
+<style type="text/css">
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	th {
+		background-color: lightgray;
+		width: 25%;
+	}
+	/* 클래스 이름이 td인 태그 */
+	.td1 {
+		background-color: orange;
+	}
+</style>
+</head>
+<body>
+	<div style="width: 50%; margin: 0px auto;">
+		<table border="1">
+			<caption>병합문제</caption>
+			<thead>
+				<tr>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="4">tfoot</td>
+				</tr>
+			
+			</tfoot>
+			<tbody>
+				<tr>
+					<td rowspan="3" class="td1">1-1</td>
+					<td colspan="3" class="td1">1-2</td>				
+				</tr>
+				<tr>
+					<td>2-2</td>
+					<td rowspan="3" class="td1">2-3</td>
+					<td>2-4</td>
+				</tr>
+				<tr>				
+					<td>3-2</td>				
+					<td>3-4</td>
+				</tr>
+				<tr>
+					<td>4-1</td>
+					<td>4-2</td>				
+					<td>4-4</td>
+				</tr>
+				<tr>
+					<td>5-1</td>
+					<td colspan="2" class="td1">5-2</td>				
+					<td>5-4</td>
+				</tr>
+				<tr>
+					<td>6-1</td>
+					<td>6-2</td>
+					<td>6-3</td>
+					<td>6-4</td>
+				</tr>
+			</tbody>
+		
+		</table>
+	</div>
+</body>
+</html>
