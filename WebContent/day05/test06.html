@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시글 작성</title>
+<style type="text/css">
+	label {
+		display: block;
+	}
+	
+	#title, #body {
+		width: 100%;
+	}
+</style>
+</head>
+<body>
+	<div style="width: 600px; margin: 0px auto;">
+		<h1 style="background-color: crimson; color: white; padding: 10px; text-align: center;">글작성</h1>
+		<form method="POST" action="test04.html" name="frm" id="frm" class="frm">
+			<input type="hidden" name="id" id="id" value="lupy">
+			
+			<div>
+				<label for="title">제목 : </label>
+				<input type="text" name="title" id="title" requeired placeholder="제목을 입력하세요!">
+			</div>
+			
+			<div>
+				<label for="body">내용 : </label>
+				<textarea cols="50" rows="10" name="body" id="body" 
+					style="resize: none;" requeired placeholder="내용을 입력하세요!"></textarea>
+			</div>
+			
+			<div style="margin-top: 20px; text-align: center;">
+				<input type="reset" class="btn" value="reset">
+				<input type="submit" class="btn" value="글작성">
+			
+			</div>
+		</form>
+</body>
+</html>
