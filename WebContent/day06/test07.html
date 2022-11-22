@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	[readonly]{
+		background-color: orange;
+	}
+	.d1{
+		width: 100px;
+		text-align: center;
+	}
+	[type="submit"] {
+		margin-top: 50px;
+	}
+	
+	[type="radio"] {
+		
+	}
+	:checked {
+		width: 30px;
+		height: 30px;
+	}
+	/*  select :selected {
+		background-color: orange;
+	}
+	*/
+</style>
+</head>
+<body>
+	<form method="GET" action="test01.html" name="frm" id="frm" style="width: 600px; margin: 0px auto;">
+		<input type="text" name="id" id="id" value="lupy"><br>
+		<input type="password" name="pw" id="pw" value="12345"><br>
+		<input type="text" name="mail" id="mail" value="lupy@githrd.com" readonly><br>
+		<input type="text" name="tel" id="tel" value="010-1111-1111" disabled><br>
+		<div class="d1">
+	 		<input type="radio" name="gen" value="남자"><span>남자</span>
+		</div>
+		<div class="d1">
+			<input type="radio" name="gen" value="여자"><span>여자</span>
+		</div><br>
+		<select name="loc">
+			<option selected>지역선택</option>
+			<option value="kr">한국</option>
+			<option value="us">미국</option>
+			<option value="jp">일본</option>
+			<option value="uk">영국</option>
+			
+		</select>
+		<input type="submit" value="제출">
+		
+	</form>
+</body>
+</html>
