@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table Tag</title>
+<style type="text/css">
+/* 
+	괄호의 종류
+		소괄호	- ()
+		중괄호	- {}
+		대괄호	- []
+ */
+	.th1 {
+		width: 70%;
+	}
+	
+	.th2 {
+		width: 30%;
+	}
+	
+	.tbl1 td {
+		text-align: right;
+		padding-right: 15px;
+	}
+	
+	.tbl2 td {
+		text-align: right;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<table border="1" style="width: 50%; border-collapse: collapse;" class="tbl1"><!-- 표 작성 태그 -->
+			<tr><!-- 행 추가 태그 -->
+				<th class="th1">이름</th><!-- 항목 제목 태그 -->
+				<th class="th2">점수</th>
+			</tr>
+			<tr>
+				<td>김정화</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>제니</td>
+				<td>95</td>
+			</tr>
+			<tr>
+				<td>나미</td>
+				<td>100</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<div>
+		<table border="1" style="width: 50%; border-collapse: collapse;" class="tbl2"><!-- 표 작성 태그 -->
+			<tr><!-- 행 추가 태그 -->
+				<th>이름</th><!-- 항목 제목 태그 -->
+				<th>점수</th>
+			</tr>
+			<tr>
+				<td>김정화</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>제니</td>
+				<td>95</td>
+			</tr>
+			<tr>
+				<td>나미</td>
+				<td>100</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

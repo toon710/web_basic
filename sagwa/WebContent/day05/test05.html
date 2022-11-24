@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+<style type="text/css">
+	input {
+		width: 100%;
+		height: 35px;
+	}
+	
+	.btn {
+		width: 32%;
+	}
+	.frm {
+		width: 80%;
+		margin: 0px auto;
+	}
+</style>
+</head>
+<body>
+	<div style="width: 600px; margin: 0px auto;">
+		<!-- 타이틀 -->
+		<h1 style="background-color: crimson; color: white; text-align: center; padding: 20px;">Login</h1>
+		<!-- 입력 폼 -->
+		<form method="GET" action="test04.html" name="frm" class="frm">
+			<input type="hidden" name="mno" id="mno" value="1001">
+			<!--  
+				속성 설명
+					method : 데이터 전달 방식
+								GET		: 주소표시줄에 데이터를 실어서 보내는 방식. 많은 양의 데이터는 전송하지 못한다.
+								POST	: 전달할 데이터를 헤더에 포함시켜서 전달 하는 방식
+								
+					action : 데이터를 전달할 페이지
+							( ==> 데이터를 전달 할테니 해당 페이지 보여주세요...)
+							
+					name : JavaScript에서 다시 설명....
+			-->
+			<div>
+				<label for="id" class="lbl">I D : </label>
+				<input type="text" name="id" id="id" placeholder="아이디를 입력하세요!" required>
+			</div>
+			<div style="margin-top: 10px;">
+				<label for="pw" class="lbl">P W : </label>
+				<input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하세요!" required>
+			</div>
+			<!-- 버튼 -->
+			<div style="margin-top: 25px; text-align: center;">
+				<input type="button" value="home" id="hbtn" class="btn">
+				<input type="reset" value="reset" id="rbtn" class="btn">
+				<input type="submit" value="login" id="lbtn" class="btn"><!-- 감싸고 있는 form 태그를 전송하는 버튼 -->
+			</div>
+		</form>
+	</div>
+</body>
+</html>

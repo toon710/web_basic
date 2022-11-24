@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Position 속성</title>
+<link rel="stylesheet" type="text/css" href="../css/w3.css">
+<style type="text/css">
+	.mxw650 {
+		max-width: 650px;
+	}
+	.box {
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+		margin: 20px;
+	}
+	
+	.box:first-child {
+		position: static;
+		bottom: 50px;
+	}
+	.box:nth-child(2) {
+		position: relative;
+		top: 50px;
+	}
+	.box:nth-child(3) {
+		position: absolute;
+		top: 0px;
+		right: 50px;
+	}
+	.box:nth-child(4) {
+		position: fixed;
+		top: 80px;
+		left: 30px;
+	}
+</style>
+</head>
+<body>
+	<div class="w3-content mxw650 w3-center">
+		<h1 class="w3-blue w3-padding">Position 속성</h1>
+		<div class="w3-margin-top">
+			<div class="box w3-border w3-border-blue">box1</div>
+			<div class="box w3-border w3-border-pink">box2</div>
+			<div class="box w3-border w3-border-purple">box3</div>
+			<div class="box w3-border w3-border-deep-purple">box4</div>
+			<div class="box w3-border w3-border-indigo">box5</div>
+		</div>
+	</div>
+	<pre>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</pre>
+</body>
+</html>
